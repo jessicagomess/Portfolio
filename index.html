@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="#home" class="logo">Jessica <span>Gomes</span></a>
+
+    <i class=" bx bx-menu" id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#serviços">Serviços</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Oi, eu sou a <span>Jessica</span></h1>
+      <h3><span>Desenvolvedora Fullstack</span></h3>
+      <p>Transformo ideias em código para criar experiências digitais intuitivas e eficientes. Meu objetivo é desenvolver soluções que realmente fazem a diferença, unindo criatividade e funcionalidade.</p>
+
+      <div class="social-icons">
+        <a href="https://github.com/jessicagomess" target="_blank">
+          <i class="bx bxl-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/jessicagomesss/" target="_blank">
+          <i class="bx bxl-linkedin-square"></i>
+        </a>
+
+        <a href="#">
+          <i class="bx bxl-instagram-alt"></i>
+        </a>
+      </div>
+
+      <div class="btn-group">
+        <a href="#projetos" class="btn">Projetos</a>
+        <a href="#contato" class="btn">Contato</a>
+      </div>
+
+    </div>
+    <div class="home-img">
+      <img src="perfil (2).png" alt="">
+    </div>
+  </section>
+
+  <section class="sobre" id="sobre">
+    <div class="sobre-img">
+      <img src="perfil (2).png" alt="">
+    </div>
+
+    <div class="sobre-content">
+      <h2>Sobre <span>Mim</span></h2>
+      <p>Desde cedo, sempre fui movida pela curiosidade de entender como as coisas funcionam. Quando eu tinha 12 anos, passava horas personalizando meu Tumblr, testando cores, fontes e layouts. O que começou como um simples hobby logo se transformou em curiosidade: como tudo aquilo funcionava por trás da tela? Queria entender não só a aparência, mas a lógica por trás de cada interação. Foi essa inquietação que me levou a escolher Análise e Desenvolvimento de Sistemas, onde finalmente mergulhei de vez no universo do desenvolvimento.</p>
+
+      <a href="#" class="btn">Leia Mais</a>
+    </div>
+  </section>
+
+  <section class="serviços" id="serviços">
+    <h2 class="heading">Serviços</h2>
+
+    <div class="serviços-container">
+      <div class="serviço-box">
+        <div class="serviço-info">
+          <i class="bx bx-code"></i>
+          <h4>Desenvolvimento Frontend</h4>
+          <p>Criação de interfaces interativas e responsivas, utilizando HTML, CSS e JavaScript. Foco em otimização de performance e experiência do usuário, com atenção aos detalhes e design limpo e funcional.</p>
+        </div>
+      </div>
+
+      <div class="serviço-box">
+        <div class="serviço-info">
+          <i class="bx bx-code-curly"></i>
+          <h4>Desenvolvimendo Backend</h4>
+          <p>Criação e otimização de APIs e sistemas robustos utilizando tecnologias como Java e Spring Boot. Foco em performance, segurança e escalabilidade, garantindo integração eficiente entre o frontend e o banco de dados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projetos" id="projetos">
+
+    <h2 class="heading">Projetos</h2>
+
+    <div class="projetos-box">
+      <div class="projeto-card">
+        <img src="/projeto1.png" alt="">
+
+        <h3>Volocopter</h3>
+        <p>Participei de um projeto acadêmico onde desenvolvemos um website completo para a empresa Volocopter, com foco na promoção de seus produtos e serviços alinhados aos Objetivos de Desenvolvimento Sustentável (ODS). Fiquei responsável pela criação e implementação da interface da página de Responsabilidades, desde o protótipo visual no Figma até o desenvolvimento com HTML, CSS e JavaScript. Trabalhei em equipe para garantir a consistência do site, adaptabilidade para diferentes dispositivos e navegadores, além de aprender novas tecnologias para atender aos requisitos do projeto.</p>
+        <div class="btn">
+          <a href="https://volocopterr.netlify.app/" target="_blank">Acessar Projeto</a>
+        </div>
+      </div>
+
+      <div class="projeto-card">
+        <img src="/projeto2.png" alt="">
+
+        <h3>Segurize</h3>
+        <p>Participei do desenvolvimento de uma API REST para o gerenciamento de seguros, utilizando Java com Spring Boot e Spring Security, focando na segurança e conformidade com a LGPD. Fiquei responsável pelo desenvolvimento do frontend, criando a interface e design com React e JavaScript, além de contribuir para a implementação do backend. Trabalhei na criação de CRUDs, consumo de APIs com Fetch API e Axios, e na integração com bancos de dados MySQL e PostgreSQL. O projeto seguiu metodologias ágeis e foi hospedado na plataforma Render, garantindo eficiência e escalabilidade.
+        </p>
+        <div class="btn">
+          <a href="https://melodic-bavarois-367b7f.netlify.app/" target="_blank">Acessar Projeto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contato" id="contato">
+    <h2 class="heading">Contato</h2>
+
+    <form form id="contato-form">
+      <div class="input-group">
+        <div class="input-box">
+          <input type="text" placeholder="Nome Completo" name="name" required>
+          <input type="email" placeholder="Email" name="email" required>
+        </div>
+
+        <div class="input-box">
+          <input type="tel" placeholder="Telefone" name="phone">
+          <input type="text" placeholder="Assunto" name="subject" required>
+        </div>
+      </div>
+
+      <div class="input-group-2">
+        <textarea name="message" id="" placeholder="Sua Mensagem" required cols="30" rows="10"></textarea>
+        <input type="submit" value="Enviar Mensagem" class="btn">
+      </div>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://github.com/jessicagomess" target="_blank">
+        <i class="bx bxl-github"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/jessicagomesss/" target="_blank">
+        <i class="bx bxl-linkedin-square"></i>
+      </a>
+
+      <a href="#">
+        <i class="bx bxl-instagram-alt"></i>
+      </a>
+    </div>
+
+    <ul class="list">
+      <li>
+        <a href="#serviços">Serviços</a>
+      </li>
+
+      <li>
+        <a href="#sobre">Sobre Mim</a>
+      </li>
+
+      <li>
+        <a href="#projetos">Projetos</a>
+      </li>
+
+      <li>
+        <a href="#contato">Contato</a>
+      </li>
+    </ul>
+    <p class="copyright">
+      © Jessica Gomes | Todos os direitos reservados
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
